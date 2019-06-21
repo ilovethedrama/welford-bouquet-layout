@@ -1,28 +1,56 @@
-'use strict';
+"use strict";
 
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+const gulp = require("gulp"),
+  sass = require("gulp-sass"),
+  autoPrefixer = require("gulp-autoprefixer"),
+  browserSync = require("browser-sync").create(),
+  plumber = require("gulp-plumber");
 
 var test = async () => {
-    console.log(
-        `
+  console.log(
+    `
     sup 
     sup 
     sup
-    `);
-}
-test.description = 'test to make sure gulp works';
+    `
+  );
+};
+test.description = "test to make sure gulp works";
 
 var scssToCss = () => {
-    return gulp.src('./app/scss/welStyle.scss')
-        .pipe(sass())
-        .pipe(autoprefixer())
-        .pipe(gulp.dest('./app/css'))
-}
+  return gulp
+    .src("./app/scss/welStyle.scss")
+    .pipe(sass())
+    .pipe(autoPrefixer())
+    .pipe(gulp.dest("./app/css"))
+    .pipe(
+      browserSync.stream({
+        match: "**/*.css"
+      })
+    );
+};
 
-scssToCss.description = 'changes scss to css and adds autoprefixes for browser support';
+scssToCss.description =
+  "changes scss to css and adds autoprefixes for browser support";
 
+var bSync = done => {
+  browserSync.init({
+    server: {
+      baseDir: "./app"
+    },
+    port: 3000
+  });
+  // gulp.watch("app/scss/*.scss"),
+  //     gulp.watch("app/*.html").on('change', browserSync.reload);
+  done();
+};
 
+bSync.description = "allows for live browser view of file as changes are made";
 
-gulp.task('default', gulp.series(test, scssToCss));
+var watcher = () => {
+  gulp.watch("app/scss/*.scss").on("change", scssToCss);
+  gulp.watch("app/*.html").on("change", browserSync.reload);
+};
+
+gulp.task("default", gulp.parallel(bSync, watcher));
+// gulp.task('default', gulp.parallel(bSync, watcher), gulp.series(test, scssToCss));
