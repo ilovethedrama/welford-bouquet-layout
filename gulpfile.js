@@ -20,6 +20,7 @@ test.description = "test to make sure gulp works";
 var scssToCss = () => {
   return gulp
     .src("./app/scss/welStyle.scss")
+    .pipe(plumber())
     .pipe(sass())
     .pipe(autoPrefixer())
     .pipe(gulp.dest("./app/css"))
