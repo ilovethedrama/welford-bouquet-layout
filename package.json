@@ -1,0 +1,28 @@
+{
+  "name": "welfordbouquet",
+  "version": "1.0.0",
+  "description": "Welford Media Layout",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "welford",
+    "bouquet",
+    "Welford",
+    "Media",
+    "flower",
+    "power"
+  ],
+  "author": "Mena",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
