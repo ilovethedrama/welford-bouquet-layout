@@ -5,6 +5,7 @@
     list-style-type: none;
     font-size: 16px;
     color: black;
+    font-weight: bold;
     font-family: 'Poppins', sans-serif;
 
     a {
@@ -28,7 +29,7 @@ main {
 }
 
 // section {
-    // border: 3px solid orange;
+// border: 3px solid orange;
 
 // }
 
@@ -45,13 +46,13 @@ nav {
 }
 
 .section__border--topNBtm {
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
+    border-top: 1px solid #A3A3A3;
+    border-bottom: 1px solid #A3A3A3;
 
 }
 
 .section__border--btm {
-    border-bottom: 1px solid lightgray;
+    border-bottom: 1px solid #A3A3A3;
 
 }
 
@@ -105,7 +106,7 @@ nav {
 
 .padder {
     margin: 5px;
-    border: 1px solid lightgray;
+    border: 1px solid #A3A3A3;
 }
 
 .titleSell--inside {
@@ -122,7 +123,7 @@ nav {
 
 .titleSell--inside__top {
     position: absolute;
-    top: -50px;
+    top: -45px;
     right: 25%;
     z-index: 2;
     background-color: black;
@@ -130,15 +131,11 @@ nav {
 
 .titleSell--inside__middle {
     position: absolute;
-    top: 15px;
-    right: 22%;
+    top: 17px;
+    right: 25%;
     z-index: 2;
-    background-color: black;
 }
 
-.wite {
-    color: #fff;
-}
 
 .sellbox--backgroundBlue {
     background: #9AB4B3;
@@ -155,13 +152,13 @@ nav {
 
 .icon {
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
+    height: 35px;
+    width: 35px;
     margin: 20px;
 }
 
 .icon--border {
-    border: 1px solid lightblue;
+    border: 1px solid #9AB4B3;
 }
 
 .titleSell--white {
@@ -199,11 +196,11 @@ nav {
 }
 
 footer {
-    margin: 70px 0px;
+    margin: 30px 0px;
 }
 
 .titleSell--lBlue {
-    color: lightblue;
+    color: #9AB4B3;
 }
 
 .containerbox {
@@ -234,8 +231,14 @@ footer {
     justify-content: space-evenly;
 }
 
-.holdall--squeeze {
+.holdall--center {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.holdall--squeeze {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
