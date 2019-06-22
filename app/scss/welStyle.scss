@@ -3,10 +3,78 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
+    font-size: 16px;
+    color: black;
+    a {
+        text-decoration: none;
+    }
 }
 
-.classsy {
-    height: 10px;
-    display: flexbox;
-    flex-flow: row nowrap;
+// BLOCK ELEMENT MODIFIER
+//NAV STYLES 
+nav {
+    border-bottom: 1px solid grey;
+
+}
+
+.nav--item {
+    margin: 10px 5px;
+    padding: 5px;
+}
+
+
+.sellbox--small {
+    height: 300px;
+    width:275px;
+    object-fit: cover;
+    overflow: hidden;   
+}
+
+.sellbox--large {
+    height: 500px;
+    width:450px;
+    object-fit: cover;
+    overflow: hidden;   
+}
+
+.titleSell {
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    text-align: center;
+    
+}
+
+.titleSell--fancy {
+    font-style: italic;
+}
+
+.titleSell--small {
+    margin: 10px 2px;
+}
+
+.titleSell--large {
+    padding: 15px 5px;
+    font-size: 5rem;
+}
+
+.price {
+    color: lightblue;
+}
+
+.containerbox {
+    margin: 10px;
+    text-align: center;
+}
+
+.text--center {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.holdall {
+    border: 3px solid pink;
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content: space-evenly;
 }
