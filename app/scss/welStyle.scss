@@ -90,8 +90,6 @@ nav {
 }
 
 .sellbox--spread--med {
-    // flex: 1 2 200px;
-    // margin: 5px;
     overflow: hidden;
     object-fit: cover;
 
@@ -99,13 +97,12 @@ nav {
         object-fit: cover;
         height: 470px;
         width: 100%;
-        // padding: 10px;
 
     }
 }
 
 .price {
-    line-height:0;
+    line-height: 0;
 }
 
 .sellbox--large {
@@ -123,25 +120,6 @@ nav {
         }
     }
 }
-.sellbox--small {
-    height: 250px;
-    // width: 240px;
-    // overflow: hidden;
-}
-
-.sellbox--medium {
-    height: 400px;
-    width: 350px;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-
-
-.saleTag {
-    border-radius: 50%;
-}
-
 
 
 
@@ -231,7 +209,6 @@ nav {
 }
 
 .titleSell--xs {
-    // margin: 5px 2px;
     padding: 15px;
     font-size: .8rem;
 }
