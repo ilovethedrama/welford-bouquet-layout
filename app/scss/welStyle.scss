@@ -37,11 +37,24 @@ nav {
     overflow: hidden;
 }
 
+.sellbox--medium {
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .sellbox--large {
     height: 500px;
     width: 450px;
     object-fit: cover;
     overflow: hidden;
+    :nth-of-type(2) {
+        ::after {
+            content:'-';
+            font-size: 100px;
+        }
+    }
 }
 
 .sellbox--spread {
@@ -49,7 +62,7 @@ nav {
 }
 
 .sellbox--spread--med {
-    flex: 0 1 300px;
+    flex: 0 1 400px;
 }
 
 .sellbox--outside {
@@ -87,8 +100,9 @@ nav {
 
 .mediaIcon {
     border-radius: 50%;
-    height: 100px;
-    width: 100px;
+    height: 60px;
+    width: 60px;
+    margin: 20px;
     border: 1px solid lightblue;
 }
 
