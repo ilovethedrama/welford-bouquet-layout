@@ -20,6 +20,13 @@
 $welfordGrey : #A3A3A3;
 $welfordBlue : #9AB4B3;
 
+
+.flexDefault {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
 body {
     margin: 25px;
     padding: 20px;
@@ -39,7 +46,6 @@ main {
 nav {
     position: sticky;
     top: 0;
-    background: white;
     z-index: 3000;
 }
 
@@ -49,13 +55,13 @@ nav {
 }
 
 .section__border--topNBtm {
-    border-top: 1px solid $welfordGrey ;
-    border-bottom: 1px solid $welfordGrey ;
+    border-top: 1px solid $welfordGrey;
+    border-bottom: 1px solid $welfordGrey;
 
 }
 
 .section__border--btm {
-    border-bottom: 1px solid $welfordGrey ;
+    border-bottom: 1px solid $welfordGrey;
 
 }
 
@@ -109,7 +115,7 @@ nav {
 
 .padder {
     margin: 5px;
-    border: 1px solid $welfordGrey ;
+    border: 1px solid $welfordGrey;
 }
 
 .titleSell--inside {
@@ -117,7 +123,6 @@ nav {
     bottom: 30px;
     right: 10%;
     z-index: 2;
-    background-color: white;
     width: 80%;
 }
 
@@ -126,7 +131,6 @@ nav {
     top: -45px;
     right: 25%;
     z-index: 2;
-    background-color: black;
 }
 
 .titleSell--inside__middle {
@@ -139,6 +143,13 @@ nav {
 
 .sellbox--backgroundBlue {
     background: $welfordBlue;
+}
+.sellbox--backgroundWhite {
+    background: white;
+}
+
+.section__spacing--med {
+    margin: 50px 0px;
 }
 
 .titleSell {
@@ -224,20 +235,23 @@ footer {
     padding: 10px 0px;
 }
 
+
 .holdall {
-    // border: 3px solid pink;
+    // @extend .flexDefault;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
 .holdall--center {
+    // @extend .flexDefault;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
 .holdall--squeeze {
+    // @extend .flexDefault;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
