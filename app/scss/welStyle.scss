@@ -7,6 +7,7 @@
     color: black;
     font-weight: bold;
     font-family: 'Poppins', sans-serif;
+    text-align: center;
 
     a {
         text-decoration: none;
@@ -21,7 +22,7 @@ $welfordGrey : #A3A3A3;
 $welfordBlue : #9AB4B3;
 
 
-.flexDefault {
+@mixin flexDefault {
     display: flex;
     flex-flow: row wrap;
 }
@@ -116,6 +117,7 @@ nav {
 .padder {
     margin: 5px;
     border: 1px solid $welfordGrey;
+    padding: 25px 10px;
 }
 
 .titleSell--inside {
@@ -128,15 +130,8 @@ nav {
 
 .titleSell--inside__top {
     position: absolute;
-    top: -45px;
-    right: 25%;
-    z-index: 2;
-}
-
-.titleSell--inside__middle {
-    position: absolute;
-    top: 17px;
-    right: 25%;
+    top: -37px;
+    right: 30%;
     z-index: 2;
 }
 
@@ -144,12 +139,17 @@ nav {
 .sellbox--backgroundBlue {
     background: $welfordBlue;
 }
+
 .sellbox--backgroundWhite {
-    background: white;
+    background: #fff;
+}
+
+.sellbox--backgroundBlack {
+    background: #000;
 }
 
 .section__spacing--med {
-    margin: 50px 0px;
+    margin: 70px 0px;
 }
 
 .titleSell {
@@ -176,6 +176,10 @@ nav {
     color: #fff;
 }
 
+.titleSell--grey {
+    color: $welfordGrey;
+}
+
 .titleSell--fancy__italic {
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -193,7 +197,7 @@ nav {
 
 .titleSell--xs {
     // margin: 5px 2px;
-    // padding: 15px;
+    padding: 15px;
     font-size: .8rem;
 }
 
@@ -237,22 +241,16 @@ footer {
 
 
 .holdall {
-    // @extend .flexDefault;
-    display: flex;
-    flex-flow: row wrap;
+    @include flexDefault;
     justify-content: space-evenly;
 }
 
 .holdall--center {
-    // @extend .flexDefault;
-    display: flex;
-    flex-flow: row wrap;
+    @include flexDefault;
     justify-content: space-around;
 }
 
 .holdall--squeeze {
-    // @extend .flexDefault;
-    display: flex;
-    flex-flow: row wrap;
+    @include flexDefault;
     justify-content: center;
 }
