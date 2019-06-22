@@ -41,8 +41,6 @@ var bSync = done => {
     },
     port: 3000
   });
-  // gulp.watch("app/scss/*.scss"),
-  //     gulp.watch("app/*.html").on('change', browserSync.reload);
   done();
 };
 
