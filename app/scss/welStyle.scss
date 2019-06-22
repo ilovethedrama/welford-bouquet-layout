@@ -12,23 +12,37 @@
     }
 }
 
+
 // BLOCK ELEMENT MODIFIER
 //NAV STYLES
 
 body {
     margin: 25px;
+    padding: 20px;
 }
 
-nav {
-    border-bottom: 1px solid grey;
-
+main {
+    padding: 40px 150px; 
 }
+
+// nav {
+    
+// }
 
 .nav--item {
     margin: 10px 5px;
     padding: 5px;
 }
 
+.section__border--topNBtm {
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+
+}
+
+// section {
+//     border: 3px solid orange;
+// }
 
 .sellbox--small {
     height: 300px;
@@ -71,7 +85,7 @@ nav {
 
 .padder {
     margin: 5px;
-    border: 1px solid black;
+    border: 1px solid lightgray;
 }
 
 .titleSell--inside {
@@ -157,6 +171,11 @@ footer {
 .text--sweetener {
     line-height: 75px;
     letter-spacing: 10px;
+}
+
+.list--padding__sm {
+    margin: 10px 0px;
+    padding: 10px 0px;
 }
 
 .holdall {
