@@ -19,14 +19,21 @@
 body {
     margin: 25px;
     padding: 20px;
+    border: 3px solid orange;
 }
 
 main {
-    padding: 40px 150px; 
+    border: 3px solid orange;
+    padding: 40px 100px;
+}
+
+section {
+    border: 3px solid orange;
+
 }
 
 // nav {
-    
+
 // }
 
 .nav--item {
@@ -41,12 +48,11 @@ main {
 }
 
 // section {
-//     border: 3px solid orange;
 // }
 
 .sellbox--small {
-    height: 300px;
-    width: 275px;
+    height: 250px;
+    width: 200px;
     object-fit: cover;
     overflow: hidden;
 }
@@ -63,9 +69,10 @@ main {
     width: 450px;
     object-fit: cover;
     overflow: hidden;
+
     :nth-of-type(2) {
         ::after {
-            content:'-';
+            content: '-';
             font-size: 100px;
         }
     }
@@ -76,7 +83,8 @@ main {
 }
 
 .sellbox--spread--med {
-    flex: 0 1 400px;
+    flex: 0 1 500px;
+    height: 400px;
 }
 
 .sellbox--outside {
@@ -188,5 +196,5 @@ footer {
 .holdall--squeeze {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
