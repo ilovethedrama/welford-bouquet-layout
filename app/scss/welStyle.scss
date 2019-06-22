@@ -78,41 +78,16 @@ nav {
     flex: 1 1 220px;
 }
 
-.sellbox--small {
-    height: 250px;
-    // width: 240px;
-    // overflow: hidden;
-}
-
-.sellbox--medium {
+.sellbox__image--md {
     height: 400px;
-    width: 350px;
     object-fit: cover;
-    overflow: hidden;
+    width: 100%;
 }
 
-// .ta {
-// }
-
-.sellbox--large {
-    margin: 5px;
-    height: 500px;
-    object-fit: cover;
-    overflow: hidden;
-    flex: 1 1 400px;
-
-    :nth-of-type(2) {
-        ::after {
-            content: '-';
-            font-size: 100px;
-        }
-    }
+.sellbox__container--md {
+    margin: 10px;
+    flex: 1 1 320px;
 }
-
-.saleTag {
-    border-radius: 50%;
-}
-
 
 .sellbox--spread--med {
     // flex: 1 2 200px;
@@ -128,6 +103,47 @@ nav {
 
     }
 }
+
+.price {
+    line-height:0;
+}
+
+.sellbox--large {
+    margin: 10px;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
+    flex: 1 1 400px;
+    min-width: 340px;
+
+    :nth-of-type(2) {
+        ::after {
+            content: '-';
+            font-size: 100px;
+        }
+    }
+}
+.sellbox--small {
+    height: 250px;
+    // width: 240px;
+    // overflow: hidden;
+}
+
+.sellbox--medium {
+    height: 400px;
+    width: 350px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+.saleTag {
+    border-radius: 50%;
+}
+
+
+
 
 .sellbox--outside {
     position: relative;
@@ -223,6 +239,10 @@ nav {
 .titleSell--large {
     padding: 15px 5px;
     font-size: 5rem;
+}
+
+.titleSell--padding--outer__xs {
+    padding: 7px;
 }
 
 .footer--item {
