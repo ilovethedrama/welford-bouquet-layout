@@ -39,11 +39,19 @@ nav {
     overflow: hidden;   
 }
 
+.sellbox--backgroundBlue {
+    background: #9AB4B3;
+}
+
 .titleSell {
     text-transform: uppercase;
     letter-spacing: .15rem;
     text-align: center;
     
+}
+
+.titleSell--white {
+    color:#fff;
 }
 
 .titleSell--fancy {
@@ -75,8 +83,8 @@ nav {
 }
 
 .holdall {
-    border: 3px solid pink;
+    // border: 3px solid pink;
     display:flex;
-    flex-flow:row nowrap;
+    flex-flow:row wrap;
     justify-content: space-evenly;
 }
