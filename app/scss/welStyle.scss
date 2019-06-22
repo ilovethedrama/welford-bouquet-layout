@@ -39,10 +39,10 @@ main {
     padding: 40px 100px;
 }
 
-// section {
-// border: 3px solid orange;
-
-// }
+section {
+    // border: 3px solid orange;
+    height: auto;
+}
 
 nav {
     position: sticky;
@@ -66,14 +66,22 @@ nav {
 
 }
 
-// section {
-// }
+
+.sellbox__image--sm {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.sellbox__container--sm {
+    margin: 10px;
+    flex: 1 1 220px;
+}
 
 .sellbox--small {
     height: 250px;
-    width: 200px;
-    object-fit: cover;
-    overflow: hidden;
+    // width: 240px;
+    // overflow: hidden;
 }
 
 .sellbox--medium {
@@ -83,11 +91,15 @@ nav {
     overflow: hidden;
 }
 
+// .ta {
+// }
+
 .sellbox--large {
+    margin: 5px;
     height: 500px;
-    width: 450px;
     object-fit: cover;
     overflow: hidden;
+    flex: 1 1 400px;
 
     :nth-of-type(2) {
         ::after {
@@ -101,13 +113,20 @@ nav {
     border-radius: 50%;
 }
 
-.sellbox--spread {
-    flex: 1 1 auto;
-}
 
 .sellbox--spread--med {
-    flex: 0 1 500px;
-    height: 400px;
+    // flex: 1 2 200px;
+    // margin: 5px;
+    overflow: hidden;
+    object-fit: cover;
+
+    img {
+        object-fit: cover;
+        height: 470px;
+        width: 100%;
+        // padding: 10px;
+
+    }
 }
 
 .sellbox--outside {
@@ -123,9 +142,9 @@ nav {
 .titleSell--inside {
     position: absolute;
     bottom: 30px;
-    right: 10%;
+    right: 5%;
     z-index: 2;
-    width: 80%;
+    width: 90%;
 }
 
 .titleSell--inside__top {
@@ -218,10 +237,6 @@ footer {
     color: $welfordBlue;
 }
 
-.containerbox {
-    margin: 10px;
-    text-align: center;
-}
 
 .text--center {
     display: flex;
@@ -247,7 +262,7 @@ footer {
 
 .holdall--center {
     @include flexDefault;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .holdall--squeeze {
