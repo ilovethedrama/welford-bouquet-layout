@@ -13,7 +13,12 @@
 }
 
 // BLOCK ELEMENT MODIFIER
-//NAV STYLES 
+//NAV STYLES
+
+body {
+    margin: 25px;
+}
+
 nav {
     border-bottom: 1px solid grey;
 
@@ -27,16 +32,39 @@ nav {
 
 .sellbox--small {
     height: 300px;
-    width:275px;
+    width: 275px;
     object-fit: cover;
-    overflow: hidden;   
+    overflow: hidden;
 }
 
 .sellbox--large {
     height: 500px;
-    width:450px;
+    width: 450px;
     object-fit: cover;
-    overflow: hidden;   
+    overflow: hidden;
+}
+
+.sellbox--spread {
+    flex: 1 1 auto;
+}
+
+.sellbox--spread--med {
+    flex: 0 1 300px;
+}
+
+.sellbox--outside {
+    position: relative;
+}
+
+.titleSell--inside {
+    position: absolute;
+    bottom: 0;
+    // left: 50%;
+    right: 50%;
+    z-index: 2;
+    background-color: white;
+    width: 50%;
+
 }
 
 .sellbox--backgroundBlue {
@@ -47,11 +75,11 @@ nav {
     text-transform: uppercase;
     letter-spacing: .15rem;
     text-align: center;
-    
+
 }
 
 .titleSell--white {
-    color:#fff;
+    color: #fff;
 }
 
 .titleSell--fancy {
@@ -67,6 +95,8 @@ nav {
     font-size: 5rem;
 }
 
+
+
 .price {
     color: lightblue;
 }
@@ -77,14 +107,25 @@ nav {
 }
 
 .text--center {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.text--sweetener {
+    line-height: 75px;
+    letter-spacing: 10px;
+}
+
 .holdall {
     // border: 3px solid pink;
-    display:flex;
-    flex-flow:row wrap;
+    display: flex;
+    flex-flow: row wrap;
     justify-content: space-evenly;
+}
+
+.holdall--squeeze {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
