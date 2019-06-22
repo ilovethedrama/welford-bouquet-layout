@@ -56,14 +56,21 @@ nav {
     position: relative;
 }
 
+.padder {
+    margin: 5px;
+    border: 1px solid black;
+}
+
 .titleSell--inside {
     position: absolute;
-    bottom: 0;
+    bottom: 30px;
     // left: 50%;
-    right: 50%;
+    right: 10%;
     z-index: 2;
     background-color: white;
-    width: 50%;
+    width: 80%;
+    // border: 1px solid black;
+    // outline-offset: 3px solid black;    
 
 }
 
@@ -78,16 +85,31 @@ nav {
 
 }
 
+.mediaIcon {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 1px solid lightblue;
+}
+
 .titleSell--white {
     color: #fff;
 }
 
 .titleSell--fancy {
     font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 100;
 }
 
 .titleSell--small {
     margin: 10px 2px;
+}
+
+.titleSell--xs {
+    // margin: 5px 2px;
+    padding: 15px;
+    font-size: .5rem;
 }
 
 .titleSell--large {
@@ -95,7 +117,13 @@ nav {
     font-size: 5rem;
 }
 
+.footer--item {
+    padding: 5px 35px;
+}
 
+footer {
+    margin: 70px 0px;
+}
 
 .price {
     color: lightblue;
