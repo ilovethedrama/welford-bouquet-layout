@@ -4,8 +4,8 @@
   "description": "Welford Media Layout",
   "main": "index.html",
   "scripts": {
-    "start": "gulp default",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app",
+    "postinstall": "gulp default"
   },
   "keywords": [
     "welford",
